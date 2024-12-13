@@ -3,7 +3,7 @@ const messages = [
 ];
 
 function generateRandomNotifications() {
-  const notificationCount = 100;
+  const notificationCount = 200;
 
   for (let i = 0; i < notificationCount; i++) {
     setTimeout(() => {

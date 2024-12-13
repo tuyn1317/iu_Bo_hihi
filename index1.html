@@ -11,10 +11,24 @@
 </head>
 
 <body>
-
-  <h1>Bò oi ! Tớ bảo nè </h1>
-  <button onclick="generateRandomNotifications()"> nhấn i Bò </button>
+  <div>
+    <h1 id="play-music">Bò ơi! Tớ bảo nè</h1>
+    <button id="play-button" onclick="generateRandomNotifications()"> nhấn i Bò 
+    </button>
+    <audio id="audio-element" >
+      <source src="D:\Hoc_Tap\TUYEN\code\1.mp3">
+    </audio>
+  </div>
   <script src="script1.js"></script>
+
+  <script>
+    // Phát nhạc khi nhấn vào nút button
+    document.getElementById("play-button").addEventListener("click", function () {
+      const audio = document.getElementById("audio-element");
+      audio.play();
+    });
+  </script>
+
 </body>
 
 </html>
