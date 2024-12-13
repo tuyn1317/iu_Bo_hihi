@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>tặng Bò nè hihi </title> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+
+</head>
+g
+<body>
+  <div>
+    
+    <h1 id="play-music">Bò ơi! Tớ bảo nè</h1>
+    <button id="play-button" onclick="generateRandomNotifications()"> nhấn i Bò 
+    </button>
+    <audio id="audio-element" >
+      <source src="D:\Hoc_Tap\TUYEN\code\1.mp3">
+    </audio>
+  </div>
+  <script src="script1.js"></script>
+
+  <script>
+    // Phát nhạc khi nhấn vào nút button
+    document.getElementById("play-button").addEventListener("click", function () {
+      const audio = document.getElementById("audio-element");
+      audio.play();
+    });
+  </script>
+
+</body>
+
+</html>
